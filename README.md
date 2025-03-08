@@ -1,15 +1,19 @@
-# Meteor Addon Template
+# **Meteor Addon: Sentinel**
 
-A template to allow easy usage of the Meteor Addon API.
+A custom addon for the **Meteor Client** with additional modules and features that the default meteor client is lacking.
 
-### How to use
+## **Installation**
+1. Download the latest build from [releases](#) *(update this link)*.
+2. Place the `.jar` file in the `mods` folder of your Minecraft installation.
+3. Launch the game and enjoy your new modules!
 
-- Clone this project
-- Use this template to create new modules/commands
-- Build the executable using the gradle `build` task.
-- Run the mod with Meteor.
+## **Modules Overview**
 
-### Project structure
+| Module Name        | Category | Description                                         |
+|--------------------|----------|-----------------------------------------------------|
+| **FriendNotifier** | Misc     | Notifies you when a friend joined the server.       |
+
+## **Project Structure**
 
 ```text
 .
@@ -32,14 +36,14 @@ A template to allow easy usage of the Meteor Addon API.
 │       │               │── hud
 │       │               │   ╰── HudExample
 │       │               │── modules
-│       │               │   ╰── ModuleExample
-│       │               ╰── AddonTemplate
+│       │               │   ╰── FriendNotifier
+│       │               ╰── Sentinel
 │       ╰── resources
 │           │── assets
 │           │   ╰── template
 │           │       ╰── icon.png
-│           │── addon-template.mixins.json
-│           ╰── fabric.mod.json
+|           |── fabric.mod.json
+│           ╰── sentinel.mixins.json
 │── .editorconfig
 │── .gitignore
 │── build.gradle
@@ -51,35 +55,11 @@ A template to allow easy usage of the Meteor Addon API.
 ╰── settings.gradle
 ```
 
-This is the default project structure. Each folder/file has a specific purpose.  
-Here is a brief explanation of the ones you might need to modify:
-
-- `.github/workflows`: Contains the GitHub Actions configuration files.
-- `gradle`: Contains the Gradle wrapper files.  
-  Edit the `gradle.properties` file to change the version of the Gradle wrapper.
-- `src/main/java/com/example/addon`: Contains the main class of the addon.  
-  Here you can register your custom commands, modules, and HUDs.  
-  Edit the `getPackage` method to reflect the package of your addon.
-- `src/main/resources`: Contains the resources of the addon.
-    - `assets`: Contains the assets of the addon.  
-      You can add your own assets here, separated in subfolders.
-        - `template`: Contains the assets of the template.  
-          You can replace the `icon.png` file with your own addon icon.  
-          Also, rename this folder to reflect the name of your addon.
-    - `addon-template.mixins.json`: Contains the Mixin configuration for the addon.  
-      You can add your own mixins in the `client` array.
-    - `fabric.mod.json`: Contains the metadata of the addon.  
-      Edit the various fields to reflect the metadata of your addon.
-- `build.gradle.kts`: Contains the Gradle build script.  
-  You can manage the dependencies of the addon here.  
-  Remember to keep the `fabric-loom` version up-to-date.
-- `gradle.properties.kts`: Contains the properties of the Gradle build.  
-  These will be used by the build script.
-- `LICENSE`: Contains the license of the addon.  
-  You can edit this file to change the license of your addon.
-- `README.md`: Contains the documentation of the addon.  
-  You can edit this file to reflect the documentation of your addon, and showcase its features.
-
-## License
-
-This template is available under the CC0 license. Feel free to use it for your own projects.
+## **How to Build**
+1. Clone this repository.
+2. Modify the template to add new modules.
+3. Build using Gradle:
+   ```sh
+   ./gradlew build
+   ```
+4. Find the compiled `.jar` file in the `/build/libs` directory.  

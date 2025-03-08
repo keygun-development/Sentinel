@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "sentinel",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "Sentinel",
+  "description": "Keygun2001's addon pack for Meteor Client",
   "authors": [
-    "seasnail"
+    "keygun-development"
   ],
   "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "repo": "https://github.com/keygun-development/Sentinel"
   },
   "icon": "assets/template/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "com.keygun2001.addon.Sentinel"
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
+    "sentinel.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25"
