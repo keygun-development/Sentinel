@@ -3,7 +3,7 @@
 A custom addon for the **Meteor Client** with additional modules and features that the default meteor client is lacking.
 
 ## **Installation**
-1. Download the latest build from [releases](#) *(update this link)*.
+1. Download the latest build from [releases](https://github.com/keygun-development/Sentinel/releases).
 2. Place the `.jar` file in the `mods` folder of your Minecraft installation.
 3. Launch the game and enjoy your new modules!
 
@@ -35,6 +35,8 @@ A custom addon for the **Meteor Client** with additional modules and features th
 │       │               │   ╰── CommandExample
 │       │               │── hud
 │       │               │   ╰── HudExample
+│       │               │── mixin
+│       │               │   ╰── ExampleMixin
 │       │               │── modules
 │       │               │   ╰── FriendNotifier
 │       │               ╰── Sentinel
